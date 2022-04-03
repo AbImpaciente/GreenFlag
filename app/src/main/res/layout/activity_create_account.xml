@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".CreateAccount">
+
+    <LinearLayout
+        android:id="@+id/ly_back_todo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_create_btn"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txt_email_lv"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_back_todo" />
+
+    <EditText
+        android:id="@+id/txt_email_into"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
+        android:autofillHints="emailAddress"
+        android:labelFor="@+id/txt_email_into"/>
+
+
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txt_pass_lv"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email_into" />
+
+    <EditText
+        android:id="@+id/txt_pass_into"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pass"
+        android:enabled="false"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/txt_pass2_lv"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pass_into" />
+
+    <EditText
+        android:id="@+id/txt_pass2_into"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pass2"
+        android:enabled="false"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_valid_pass_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/validation_pass"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pass2_into" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_todo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/gradient_button_background"
+        android:fontFamily="@font/sans300"
+        android:text="@string/txt_create_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_valid_pass_desc" />
+
+    <ImageView
+        android:id="@+id/iv_email_correct"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_email_into"
+        app:layout_constraintEnd_toEndOf="@+id/txt_email_into"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/iv_pass_correct"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_pass_into"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pass_into"
+        app:srcCompat="@drawable/tick" />
+
+    <ImageView
+        android:id="@+id/iv_pass2_correct"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_pass2_into"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pass2_into"
+        app:srcCompat="@drawable/tick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GreenFlag</string>
+    <string name="lvl_description_gf">GreenFlag Customers can create an account to access</string>
+    <string name="desc_logo_company">this is the logo</string>
+    <string name="car_health_updates">Car health updates</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="policy_information">Policy information</string>
+    <string name="txt_create_btn">Create an account</string>
+    <string name="txt_email_lv">Email address</string>
+    <string name="txt_pass_lv">Create password</string>
+    <string name="txt_pass2_lv">Repeat password</string>
+    <string name="validation_pass">Your password should have a minimum of 8 characters and contain al least one number, one uppercase and one lower case letter. You can use special characters</string>
+    <string name="regex_email"><![CDATA[^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])([A-Za-z\\d$@$!%*?&]|[^ ]){8,15}$]]></string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+
+</resources>
