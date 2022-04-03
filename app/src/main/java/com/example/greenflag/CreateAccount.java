@@ -10,6 +10,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,7 @@ public class CreateAccount extends AppCompatActivity {
             Clear(etPass);
             Clear(etConfirmPass);
             ivPass2.setVisibility(View.INVISIBLE);
+            Toast.makeText(this, "Account created", Toast.LENGTH_SHORT).show();
         });
 
         etEmail.addTextChangedListener(new TextWatcher() {
